@@ -13,6 +13,8 @@
 		AFEDC32520A6B64000B7F21C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFEDC32320A6B64000B7F21C /* Main.storyboard */; };
 		AFEDC32720A6B64000B7F21C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFEDC32620A6B64000B7F21C /* Assets.xcassets */; };
 		AFEDC32A20A6B64000B7F21C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFEDC32820A6B64000B7F21C /* LaunchScreen.storyboard */; };
+		AFEDC33220A6BD3500B7F21C /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEDC33120A6BD3500B7F21C /* QuestionViewController.swift */; };
+		AFEDC33420A6C0C600B7F21C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFEDC33320A6C0C600B7F21C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		AFEDC32620A6B64000B7F21C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFEDC32920A6B64000B7F21C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFEDC32B20A6B64000B7F21C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFEDC33120A6BD3500B7F21C /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		AFEDC33320A6C0C600B7F21C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D4C158659FC2EBB82FD7D628 /* Pods_QuestionBox2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuestionBox2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDDEAE8689ACC52936CD7676 /* Pods-QuestionBox2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestionBox2.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuestionBox2/Pods-QuestionBox2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,9 +77,11 @@
 				AFEDC31F20A6B64000B7F21C /* AppDelegate.swift */,
 				AFEDC32120A6B64000B7F21C /* ViewController.swift */,
 				AFEDC32320A6B64000B7F21C /* Main.storyboard */,
+				AFEDC33120A6BD3500B7F21C /* QuestionViewController.swift */,
 				AFEDC32620A6B64000B7F21C /* Assets.xcassets */,
 				AFEDC32820A6B64000B7F21C /* LaunchScreen.storyboard */,
 				AFEDC32B20A6B64000B7F21C /* Info.plist */,
+				AFEDC33320A6C0C600B7F21C /* GoogleService-Info.plist */,
 			);
 			path = QuestionBox2;
 			sourceTree = "<group>";
@@ -150,6 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFEDC33420A6C0C600B7F21C /* GoogleService-Info.plist in Resources */,
 				AFEDC32A20A6B64000B7F21C /* LaunchScreen.storyboard in Resources */,
 				AFEDC32720A6B64000B7F21C /* Assets.xcassets in Resources */,
 				AFEDC32520A6B64000B7F21C /* Main.storyboard in Resources */,
@@ -166,30 +173,16 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-QuestionBox2/Pods-QuestionBox2-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
 				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,6 +237,7 @@
 			files = (
 				AFEDC32220A6B64000B7F21C /* ViewController.swift in Sources */,
 				AFEDC32020A6B64000B7F21C /* AppDelegate.swift in Sources */,
+				AFEDC33220A6BD3500B7F21C /* QuestionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

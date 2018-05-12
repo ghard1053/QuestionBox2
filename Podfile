@@ -9,6 +9,6 @@ target 'QuestionBox2' do
 
   pod 'TwitterKit'
   pod 'Firebase/Core'
-  pod 'Firebase/Firestore'
+  # pod 'Firebase/Firestore'
 
 end
