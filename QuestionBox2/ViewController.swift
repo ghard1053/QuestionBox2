@@ -27,24 +27,31 @@ class ViewController: UIViewController {
   }
 
   @IBAction func login(_ sender: Any) {
-    TWTRTwitter.sharedInstance().logIn { (session, error) in
+    
+    TWTRTwitter.sharedInstance().logIn(completion: { (session, error) in
       if let sess = session {
-        self.username = sess.userName
-      }
-      
-      let okorNot = UserDefaults.standard.string(forKey: "OK")
-      if okorNot == nil {
-        //Firebaseにusernameを飛ばす
-        self.postUserName()
-        UserDefaults.standard.set("OK", forKey: "OK")
-
-      } else {
+        print("signed in as \(sess.userName)");
         
+        self.username = sess.userName
+        
+        let okornot = UserDefaults.standard.string(forKey: "OK")
+        
+        if okornot == nil {
+          
+          self.postUserName()
+          UserDefaults.standard.set("OK", forKey: "OK")
+          
+        } else {
+          
+        }
+        
+        self.performSegue(withIdentifier: "next", sender: nil)
+        
+      } else {
+        print("error: \(error?.localizedDescription)")
       }
-      
-      self.performSegue(withIdentifier: "next", sender: nil)
-      
-    }
+    })
+    
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

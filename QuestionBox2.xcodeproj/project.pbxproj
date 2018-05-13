@@ -15,6 +15,7 @@
 		AFEDC32A20A6B64000B7F21C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFEDC32820A6B64000B7F21C /* LaunchScreen.storyboard */; };
 		AFEDC33220A6BD3500B7F21C /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEDC33120A6BD3500B7F21C /* QuestionViewController.swift */; };
 		AFEDC33620A6C62900B7F21C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFEDC33520A6C62900B7F21C /* GoogleService-Info.plist */; };
+		AFEDC33820A7FF3300B7F21C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEDC33720A7FF3300B7F21C /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		AFEDC32B20A6B64000B7F21C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFEDC33120A6BD3500B7F21C /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		AFEDC33520A6C62900B7F21C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AFEDC33720A7FF3300B7F21C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		D4C158659FC2EBB82FD7D628 /* Pods_QuestionBox2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuestionBox2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDDEAE8689ACC52936CD7676 /* Pods-QuestionBox2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestionBox2.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuestionBox2/Pods-QuestionBox2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +79,7 @@
 				AFEDC31F20A6B64000B7F21C /* AppDelegate.swift */,
 				AFEDC32120A6B64000B7F21C /* ViewController.swift */,
 				AFEDC32320A6B64000B7F21C /* Main.storyboard */,
+				AFEDC33720A7FF3300B7F21C /* SearchViewController.swift */,
 				AFEDC33120A6BD3500B7F21C /* QuestionViewController.swift */,
 				AFEDC32620A6B64000B7F21C /* Assets.xcassets */,
 				AFEDC32820A6B64000B7F21C /* LaunchScreen.storyboard */,
@@ -251,6 +254,7 @@
 			files = (
 				AFEDC32220A6B64000B7F21C /* ViewController.swift in Sources */,
 				AFEDC32020A6B64000B7F21C /* AppDelegate.swift in Sources */,
+				AFEDC33820A7FF3300B7F21C /* SearchViewController.swift in Sources */,
 				AFEDC33220A6BD3500B7F21C /* QuestionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
